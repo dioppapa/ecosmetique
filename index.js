@@ -12,7 +12,7 @@ app.get('/' , function ( req , res) {
             
  
    
-  res.render( "aicha")
+  res.render( "acceuil")
  
 
 });
