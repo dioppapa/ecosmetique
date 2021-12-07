@@ -1,29 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>acceuil</title>
-    
-    <!---we had linked our css file----->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e commerce</title>
 
+    <!-- Fichiers CSS -->
+   
+   <style>
+     
+   </style>
   
+     <script src="/public/script/jquery-3.1.1.min.js"  type="text/javascript">    </script>
+    
+     <script src="/public/script/is.min.js"  type="text/javascript">    </script>
+    
+   <script>
+
+  </script>
+    
+
 </head>
 <body>
-
-</br> </br> </br> </br> </br> </br> </br> </br> </br> </br>
-
-    <div class="a">
-
-		 <p> Bismilah on commence une nouvelle application pour Aissata Deh changed</p>
-		 
-
-		</div>
-	<style>
-		p{
-			color: aquamarine;
-			padding-left: 300px;
-		}
-	</style>
     
+   
+     <script>
+
+
+         
+     </script>
+  
+
+     <div id="global">
+
+         
+        <div id="entete">
+          <label id="lmess">CHEZ XY COSMETIQUE</label>
+          <label id="lmessb">Vos attentes nos choix</label>
+          <label id="lserch">Chercher . . .</label>
+          <img   id="beautea" src ="public/image/acceuil/cosm.png" />
+         
+         
+        <div id="zonederecherche">
+            <input id="serchacceuil" type="text" >
+
+          </input>
+          <img   id="imgserch" src ="public/image/acceuil/search.png" />
+            </div>
+ 
+<style>
+  
+</style>
+ <script>
+ 
+ 
+ 
+
+   
+
+ </script>
+
+        </div>
+    
+
+
+     
+    <div id="tableproduitdiv">
+       
+       <table class="tableproduit">
+        
+       </table>
+      
+  
+    </div>
+
+    
+    <div id="apercuacceuil">
+    
+    </div>
+    
+    
+     
+      
+     
+    </div> 
+    
+    
+   
+    
+    
+
+<!-- 
+   <script src="/public/script/autocompletion.js"  type="text/javascript">    </script>
+   <script src="/public/script/logina.js"  type="text/javascript">    </script>
+ 
+   <script src="/public/script/curve.js"  type="text/javascript">    </script>
+ 
+   <script src="/public/script/scriptserch.js"  type="text/javascript">    </script>
+  
+
+   <script src="/public/script/csslogina.js"  type="text/javascript">    </script>
+   <script src="/public/script/csstable.js"  type="text/javascript">    </script>
+  
+  
+  <script src="https://checkout.stripe.com/checkout.js" defer></script>
+  <script>
+      var stripePublicKey = 'pk_test_51IrlT3G6NGo2ELzVS8zIiejtT05NDsVUkchE83aVP6TUsRsXKBeC9PLvpToZ1xTZAtknS2JnqQaaJoywirgQJYBl006NbClLrE'
+  </script>
+  <script src="/public/script/store.js" defer></script>
+ 
+ -->
+    
+    <style>
+     
+   
+   
+    </style>
+
+      
+<script>
+  
+function cssHeader() {
+    var xx =  (X*98)/100
+    
+    $("#entete").css({
+        'position': 'relative',
+       'padding-top':'5%',
+         'margin-bottom': '3%',
+         }) ;
+
+         $('#entete').width(  xx);
+        
+        $('#entete').height( Y/5);
+
+
+        $("#entete").css({
+            'background':'rgba(0,0,0,0.3)',
+              'background': 'url("public/image/acceuil/beauteb.png")  no-repeat top right,url("public/image/acceuil/beautea.png")  no-repeat top left , rgba(0,0,0,0.3) ',
+              
+              
+             }) ;
+
+             $("#beautea").css({
+                'position': 'absolute',
+                'left': '50%',
+                'top': '50%',
+                'width': '200px',
+                'height': '70px',
+                 '-ms-transform': 'translateX(-50%)',
+                'transform': 'translateX(-50%)',
+                 }) ;
+
+                 $("#lserch").css({
+                    'position': 'absolute',
+                    'left': '15%',
+                    'top': '60%',
+                    
+                    'color': 'white',
+                    'font-size':'17px',
+                    'font-weight': 'bold',
+                    'font-style': 'italic',
+                    
+            
+                     }) ;
+
+                     $("#lmess").css({
+                        'position': 'absolute',
+                        'right': '15%',
+                        'top': '20%',
+                        
+                         '-ms-transform': 'translateX(-50%)',
+                        'transform': 'translateX(-50%)',
+                        'color': 'white',
+                        'font-size':'20px',
+                        'font-weight': 'bold',
+                        'font-style': 'normal',
+                        
+       'font-family': 'Courier New Courier, monospace',
+
+
+
+                         }) ;
+
+                         $("#lmessb").css({
+                            'position': 'absolute',
+                            'right': '25%',
+                            'top': '33%',
+                            
+                             '-ms-transform': 'translateX(-50%)',
+                            'transform': 'translateX(-50%)',
+                            'color': '#00ffff',
+                            'font-size':'17px',
+                            'font-weight': 'bold',
+                            'font-style': 'italic',
+                            
+                    'font-family': 'sans-serif',
+
+                             }) ;
+       
+   }
+function cssBody() {
+
+$("body").css({
+
+  'background-image': 'linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("public/image/acceuil/bg.jpg")',
+  'background-repeat': 'no-repeat' ,
+
+  'background-position': 'center',
+  'background-size': 'cover',
+
+ 
+ 'margin':'0px',
+ 'position':'relative',
+ 'padding':'0px'
+  });
+
+ $("html").css({
+ 
+   'margin':'0px',
+   'padding':'0px'
+ });
+  
+}
+</script>
+    
+ 
+ 
+       
 </body>
 </html>
