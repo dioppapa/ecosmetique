@@ -11,7 +11,7 @@ app.use('/public' , express.static('public')) ;
 
 
 
-todoCont(app);
+
   
 app.get('/' , function ( req , res) {
             
