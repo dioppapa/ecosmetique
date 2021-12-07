@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   
+   <style>
+   
+
+
+   </style>
+</head>
+<body>
+    <script src="/public/script/jquery-3.1.1.min.js"  type="text/javascript">    </script>
+    
+   
+    <div id="header">
+        <div id="htitre">
+            <div id="logoetlabel">
+                <img id="idlogo" src ="public/image/acceuil/ppp.png"></img>
+                <label id="idlab"> XY Cosmetique</label>
+            </div>
+            <img id="iduser" src ="public/image/admi/utilisateur.png"></img>
+           
+             <div id="iddivnot">
+
+
+                <img id="nota" src ="public/image/admi/message.png"></img>
+                <img id="notb" src ="public/image/admi/noter.png"></label>
+                <div id="notaa">1</div>
+                <label id="notbb">1</label>
+
+            </div>
+
+            <div id="divserch">
+
+                <div id="divsercha">
+                    <img id="idimgserch" src ="public/image/acceuil/search.png"></img>
+                
+                   <input id="idinputsercha" type="search" placeholder="search..."></input>
+                  
+                </div>
+                <div id="serchtableapercu">
+                  </div>
+            </div>
+
+        </div>
+
+        <div id="houtil">
+            <div id="divbouton">
+                <img id="idparam" class="bt" src ="public/image/admi/param.png"></img>
+                <img id="idsup" class="bt" src ="public/image/admi/sup.png"></img>
+                <img id="idnp" class="bt" src ="public/image/admi/np.png"></img>
+                <img id="idarch" class="bt" src ="public/image/admi/archive.png"></img>
+                <img id="idact"  class="bt" src ="public/image/admi/act.png"></img>
+                <img id="idedit" class="bt" src ="public/image/admi/edit.png"></img>
+                <img id="idplus" class="bt" src ="public/image/admi/plus.png"></img>
+               
+            </div>
+
+            <div id="divgain">
+                <label id="idlabgaina"> Gain Du Jour</label>
+                <label id="idlabgainb"> 650 000 F</label>
+                <div id="hidegain">
+                </div>
+                <img id="idhide" src ="public/image/admi/moins.png"></img>
+                
+            
+               
+            </div>
+        </div>
+    </div>
+                  
+    <div id="body">
+        <div id="menu">
+                 <div class="classdivm">
+                    <img class="classicone" src ="public/image/admi/user.png"></img>
+        
+                    <div class="classlab"> Client</div>
+                    <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+                 </div>
+                 <div class="classdivm">
+                    <img class="classicone" src ="public/image/admi/np.png"></img>
+        
+                    <div class="classlab"> Produit</div>
+                    <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+              
+                 </div>
+                 <div class="classdivm">
+                    <img class="classicone" src ="public/image/admi/noter.png"></img>
+        
+                    <div class="classlab"> Commande</div>
+                    <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+              
+                 </div>
+                 <div class="classdivm">
+                    <img class="classicone" src ="public/image/admi/livr.png"></img>
+        
+                    <div class="classlab"> Livraison</div>
+                    <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+              
+                 </div>
+                 <div class="classdivm">
+                    <img class="classicone" src ="public/image/admi/pay.png"></img>
+        
+                    <div class="classlab"> Payement</div>
+                    <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+              
+                 </div>
+                 <div class="classdivm">
+                    <img class="classicone" src ="public/image/admi/stat.png"></img>
+        
+                    <div class="classlab"> Statistique</div>
+                    <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+              
+                 </div>
+                 <div class="classdivm">
+                    <img class="classicone" src ="public/image/admi/archive.png" ></img>
+        
+                    <div class="classlab"> Archive</div>
+                    <img class="classflech" src ="public/image/admi/flech.png" style="display: none;"></img>
+              
+                 </div>
+        </div>
+        <div id="corps">
+            <div class="partimenu" style="display: block;">
+                 <div id="tabclient">
+     <table class="tabclient">
+           
+        <tr>
+                   <th>id</th>
+                   <th>nom</th>
+                    <th>prenom</th>
+                        <th>pseudo</th>
+                            <th>tel</th>
+                                <th>adresse</th>
+                                    <th>email</th>
+               </tr>
+           
+             
+     </table>
+                 </div>
+                 
+                 <div id="tabapercu">
+                    <img id="idapercup" src ="public/image/admi/utilisateurb.png"></img>
+                    <div class="divsup" style="display: none;">
+                    
+                        <label class="labelsup"> Voulez vous supprimer ce client</label></br>
+                        <input class="inputvalidationa" type="button" value="Valider"> </label>
+                        <input class="inputvalidationb" type="button" value="Annuler"> </label>
+                       
+                    </div>
+                <div id="divclientd">
+                    <div class="divclientitem">
+
+                    <label class="clientdlab"> Nom</label>
+                    <label class="clientdlabb"> Diop</label>
+                  </div>
+
+                  <div class="divclientitem">
+
+                    <label class="clientdlab"> Prenom</label>
+                    <label class="clientdlabb"> Papa</label>
+                  </div>
+                  <div class="divclientitem">
+
+                    <label class="clientdlab"> depuis le</label>
+                    <label class="clientdlabb"> 12/10/21</label>
+                  </div>
+                  <div class="divclientitem">
+
+                    <label class="clientdlab"> Commande</label>
+                    <label class="clientdlabb"> 3</label>
+                  </div>
+                  <div class="divclientitem">
+
+                    <label class="clientdlab"> Payement</label>
+                    <label class="clientdlabb"> 2</label>
+                  </div>
+
+                </div>
+                    <div id="idlink">
+                        <img id="idfac" src ="public/image/admi/facebook.png"></img>
+                        <img id="idtwitt" src ="public/image/admi/twitter.png"></img>
+                        <img id="idinst" src ="public/image/admi/insta.png"></img>
+                        <img id="idmess" src ="public/image/admi/watchap.jpg"></img>
+        
+                    </div>
+                </div>
+            </div>
+            <div class="partimenu" style="display: none;">
+                <div id="tabproduit">
+                    <table class="tabclientp">
+                       
+                       <tr>
+                                  <th>id</th>
+                                  <th>classe</th>
+                                   <th>marque</th>
+                                       <th>prix</th>
+                                           <th>description</th>
+                                               <th>img</th>
+                                                  
+                              </tr>
+                          
+                            
+                    </table>
+                                </div>
+                                <div id="tableapercup">
+                                    <img id="idapercupp" src ="public/image/admi/utilisateurb.png"></img>
+                                   
+                                    <div class="divsup" style="display: none;">
+                    
+                                        <label class="labelsup"> Voulez vous supprimer ce produit</label></br>
+                                        <input class="inputvalidationa" type="button" value="Valider"> </label>
+                                        <input class="inputvalidationb" type="button" value="Annuler"> </label>
+                                       
+                                    </div>
+                                    <div class="divajout" style="display: none;">
+                    
+                                        <input class="changeimage" type="button" value="Changer l'image"> 
+                                    </label>
+                                    </br>
+                                    <div class="control"> 
+                                        <input class="ajvalider" type="button" value="Ajouter" > </label>
+                                        <input class="ajvalider" type="button" value="Annuler" > </label>
+                                        <input class="ajvalider" type="button" value="Modifier"  > </label>
+                                      
+                                    </div>
+                                         
+                                        
+                                        <form  id = "myForm" action ="/upload" method="POST" enctype="multipart/form-data"> 
+                                            <input class="divajouter" type="file" name="files" accept=".png"  id="file" style="display: none;">  
+                                            </input> 
+                                            
+                                              <input type="submit"  id="submit"  value="submit"  style="display:none;">
+                                            </input> 
+                                        </form>
+                                    </div>
+                                    <div id="divclientdp">
+                                        <div class="divclientitem">
+                    
+                                        <label class="clientdlab"> Categorie</label>
+                                        <label class="clientdlabb"> Diop</label>
+                                     
+                                         </div>
+                    
+                                      <div class="divclientitem">
+                    
+                                        <label class="clientdlab">Marque</label>
+                                        <label class="clientdlabb"> Papa</label>
+                                      </div>
+                                      <div class="divclientitem">
+                    
+                                        <label class="clientdlab"> Prix</label>
+                                        <label class="clientdlabb"> 12/10/21</label>
+                                      </div>
+                                      <div class="divclientitem">
+                    
+                                        <label class="clientdlab"> Description</label>
+                                        <label class="clientdlabb"> 3</label>
+                                        <label class="clientdlabb" style="display: none;"> </label>
+                                      
+                                    </div>
+                                </div>
+                              </div>
+            </div>
+            <div class="partimenu" style="display: none;">
+                <div id="tabcommande">
+                    <table class="tabcommande">
+                       
+                       <tr>
+                                  <th>id</th>
+                                  <th>client</th>
+                                   <th>quantite</th>
+                                       <th>produit</th>
+                                           <th>date de commande</th>
+                                           <th>payement</th>
+                                           <th>date de payement</th>
+                                                  
+                              </tr>
+
+                            
+                          
+                            
+                    </table>
+                                </div>
+
+
+
+
+                                <div id="tableapercucom">
+                                    <img id="idapercom" src ="public/image/admi/utilisateurb.png"></img>
+                            
+                                    
+                                
+                                    <div id="divcommandet">
+                                        <div class="divclientitem">
+                    
+                                        <label class="clientdlabc">Client</label>
+                                        <label class="clientdlabbc"> </label>
+                                     
+                                         </div>
+                    
+                                      <div class="divclientitem">
+                    
+                                        <label class="clientdlabc"> Produit </label>
+                                        <label class="clientdlabbc">  </label>
+                                      </div>
+                                      <div class="divclientitem">
+                    
+                                        <label class="clientdlabc"> Produit id</label>
+                                        <label class="clientdlabbc">  </label>
+                                      </div>
+                                      <div class="divclientitem">
+                    
+                                        <label class="clientdlabc"> Quantite </label>
+                                        <label class="clientdlabbc"></label>  
+                                      </div>
+                                      <div class="divclientitem">
+                    
+                                        <label class="clientdlabc"> Payement </label>
+                                        <label class="clientdlabbc"></label>
+                                        
+                                       
+                                    </div>
+
+                                    <div class="divclientitem">
+                    
+                                        <label class="clientdlabc"> Mode de Payement </label>
+                                        <label class="clientdlabbc"></label>
+                                        
+                                       
+                                    </div>
+                                    <div class="divclientitem">
+                    
+                                        <label class="clientdlabc"> Date de Payement </label>
+                                        <label class="clientdlabbc"></label>
+                                        
+                                        </div>
+
+                                      <div class="divclientitem">
+                    
+                                        <label class="clientdlabc"> Livraison </label>
+                                        <label class="clientdlabbc"></label>
+                                       
+                                    
+                                    </div>
+                                    <div class="divclientitem">
+                    
+                                        <label class="clientdlabc"> Date de Livraison </label>
+                                        <label class="clientdlabbc"></label>
+                                       
+                                    
+                                    </div>
+
+                                    <div class="divclientitem">
+                    
+                                        <label class="clientdlabc"> Date De Commande  </label>
+                                        <label class="clientdlabbc"></label>
+                                       
+                                    
+                                    </div>
+
+                                   
+                                </div>
+                              </div>
+
+       </div>
+       <div class="partimenu" style="display: none;">
+        <div id="tablivraison">
+            <table class="tablivraison">
+               
+               <tr>
+                          <th>id</th>
+                          <th>commande</th>
+                           <th>status</th>
+                          <th>date de commande</th>
+                                   
+                                          
+                      </tr>
+
+                    
+                  
+                    
+            </table>
+                        </div>
+</div>
+<div class="partimenu" style="display: none;">
+    <div id="tabpayement">
+        <table class="tabpayement">
+           
+           <tr>
+                      <th>id</th>
+                      <th>commande</th>
+                       <th>mode d achat</th>
+                      <th>date de payement</th>
+                               
+                                      
+                  </tr>
+
+                
+              
+                
+        </table>
+                    </div>
+</div>
+<div class="partimenu" style="display: none;">
+    <p> statiqtique</p>
+</div>
+<div class="partimenu" style="display: none;">
+    <p class="archive"> pas  encore d' archive pour cette site</p>
+</div>
+
+<div class="partimenu" style="display: none;">
+    <div class="divparam">
+        <table class="tabparam">
+        
+        </table>
+
+    </div>
+
+    <div class="divparama">
+        
+       <img id="imgparam" src ="public/image/admi/archive.png"></img>
+       <label class="controlp"> namef</label> 
+    
+    <div class="divcontrolp">
+        
+       
+        <img type="button" class="controlp" src ="public/image/admi/edit.png"></img></br>
+        <img type="button" class="controlp" src ="public/image/admi/sup.png"></img></br>
+       
+     </div>
+     <div class="divv"  style="display: none;">
+        <input type="text"   class="controlpp" placeholder="name" />
+        <input type="button"  value="valider" class="controlpp" />
+ </div>
+
+ <div class="divvv"  style="display: none;">
+    <input type="text"   class="controlppp" placeholder="new name"/>
+    <input type="button"  value="valider" class="controlppp" />
+</div>
+     
+     <input type="button"  value="Ajouter dossier" class="controlp" />
+    
+    </div>
+    
+</div>
+        
+    </div>
+                 
+   </div>
+    
+    
+
+  
+  
+ <!-- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+ -->  
+
+<script src="/public/script/scriptclient.js"  type="text/javascript">    </script>
+
+
+<script src="/public/script/scriptproduit.js"  type="text/javascript">    </script>
+<script src="/public/script/scriptpayement.js"  type="text/javascript">    </script>
+
+
+<script src="/public/script/scriptlivraison.js"  type="text/javascript">    </script>
+
+
+<script src="/public/script/scriptcommande.js"  type="text/javascript">    </script>
+
+<script src="/public/script/scriptadmi.js"  type="text/javascript">    </script>
+
+ <script src="/public/script/cssadmi.js"  type="text/javascript">    </script>
+ 
+
+</body>
+</html>
+
+
+<style>
+    
+</style>
+
+ 
