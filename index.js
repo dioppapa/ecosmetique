@@ -98,6 +98,69 @@ app.post('/stripe', function(req, res) {
   
     
 })
+app.get('/testConn' , function ( req , res) {
+  var data = {}
+
+  if( req.session.isAuth && req.session.admi == false) {
+    
+    
+    console.log('connected client')
+    data.connected = true
+    data.client = true
+    data.user = req.session.user
+
+     res.send(data)
+  }
+
+  else { 
+    console.log('non connected to a client')
+    data.connected = false
+    data.user = ''
+    data.client = ''
+  res.send(data)
+  }
+
+});
+app.get('/decnt' , function ( req , res) {
+       
+  console.log(' life  is good ')
+req.session.destroy(function(){
+
+  res.send ('destroy')
+  
+      
+   });
+  
+  
+
+
+});
+
+app.get('/cnt' , function ( req , res) {
+
+  var us = {}
+  var data = {}
+
+    us.name = req.query.name
+    us.prenom = req.query.prenom
+    us.id = req.query.id
+
+  req.session.isAuth = true
+  req.session.admi = false
+
+
+  req.session.user  = us;
+  
+  
+  data.connected = true
+  data.user = us
+
+ 
+  res.send(data)
+    
+
+});
+
 
 
     app.listen(port, function(){
