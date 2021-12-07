@@ -8,7 +8,7 @@ var todoCont = require('./routes/controller') ;
 app.set('view engine' , 'ejs') ;
 app.use('/public' , express.static('public')) ;
 
-
+todoCont(app);
 
 
 
