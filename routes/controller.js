@@ -43,6 +43,22 @@
     
    
     
+	 
+	 app.get('/admi' , function ( req , res) {
+
+   // if(req.session.isAuth == true && req.session.admi == true){
+   //   res.render('admi' ); 
+   //   console.log('session admi '+ req.session.admi)
+   // }
+  //  else
+    
+    res.render('login' ); 
+           
+      
+
+ 
+});
+	 
     app.get('/validerLoginPass' , function ( req , res) {
       console.log('pseudo,passe')
     
@@ -56,15 +72,7 @@
 
 
 
-app.get('/' , function ( req , res) {
 
-          res.render('acceuil');
-            
-            
-            
-
-       
-    });
 
 
     
@@ -544,20 +552,7 @@ app.get('/modifierdir' , function ( req , res) {
 
     });
     
-  app.get('/admi' , function ( req , res) {
-
-    if(req.session.isAuth == true && req.session.admi == true){
-      res.render('admi' ); 
-      console.log('session admi '+ req.session.admi)
-    }
-    else
-    
-    res.render('login' ); 
-           
-      
-
- 
-});
+  
    
 
 
