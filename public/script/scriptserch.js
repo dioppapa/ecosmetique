@@ -15,7 +15,7 @@ var aa = 0.001
         var a = 0.1
         var ap = 0.08
         var produit = tableDonneInitial()
-        var XX = $('body').width() - 50
+       var XX = $('body').width() - 160
         var tr = 3
         var curtab = 1
         var datacurtab = {}
@@ -718,8 +718,12 @@ function ProduitHover(){
          //html pagnier
          function pagnier() {
           var p = '<img class="pagnier"  src ="public/image/acceuil/ppp.png"/>'
-          $('#paginerdiv .pagier').remove();
-          $('#paginerdiv').append(p)
+          var tt = '<label class="pagnierlabel"/>cliquer ici pour valider pagnier</label>'
+        var div = '<div id="pagnierAnimation" >' + p + tt +  '</div>'
+
+          $('#paginerdiv #pagnierAnimation').remove();
+          
+          $('#paginerdiv').append(div)
          
         clickPagnier()
         
@@ -2203,7 +2207,7 @@ $('.moins').hover(function(){
 
         //anime pagnier
         function animePagnierA() {
-          var X =    $('#tableproduitdiv').width() - 50
+          var X =    $('#tableproduitdiv').width() - 120
        
            var Y = $('body').height()
            
@@ -2216,7 +2220,7 @@ $('.moins').hover(function(){
         }
 
        function animPagnier() {
-        $(".pagnier").css({
+        $("#pagnierAnimation").css({
           'transform': 'translateX(' + inc + 'px)',
           
            });
@@ -2531,13 +2535,31 @@ return ver ;
         
 //css pagnier
 function cssPagnier() {
+  $('#pagnierAnimation').css({
+   
+   'border': '1px solid black' ,
+   'width':'15%',
+   'border-radius':'15%',
+    
+ 
+ });
+
   $('.pagnier').css({
      'width':'30px',
+     'float': 'left' ,
     
     'height': '30px' ,
     
   
   });
+  $('.pagnierlabel').css({
+    'font-weight': 'bold',
+    'font-size': '10px',
+    'font-family': 'Courier New Courier, monospace',
+
+   
+ 
+ });
  }
  function cssdivPagnierInit() {
   
