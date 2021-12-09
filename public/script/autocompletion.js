@@ -281,11 +281,11 @@ function cssautocompl() {
    
    }
  var i = 0
+   var tt = "Cliquer ici pour chercher un produit "
  var text = ''
- var tab = ['C','h','e','r','c','h','e','r','.','.','.','.','.','.']
- var tl  = tab.length
+ var tl  = tt.length
    function writeSerch() {
-       text = text + tab[i]
+       text = text + tt.charAt(i)
     $("#lserch").text( text)
 
     if( i >= tl - 1){
