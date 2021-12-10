@@ -107,6 +107,11 @@ cssDisplayAjoutOrBy(0)
   
  }
  
+ var elem = document.getElementById("lserch");
+
+      
+ 
+ 
         // connection methode
 
         function  destroySection(){
@@ -280,9 +285,9 @@ function getPagnierAchatDirect( idp , idc ) {
     
       
 
-          var bc = '<div class="commanderb"> <img class="commander"  src ="public/image/acceuil/pp.png"/> </br> <label class="lac"> acheté </label> </div>'
+          var bc = '<div class="commanderb"> <img class="commander"  src ="public/image/acceuil/pp.png"/> </br> <label class="lac"> achetÃ© </label> </div>'
           
-          var ba = '<div class="ajouterb"> <img class="ajouter"  src ="public/image/acceuil/plus.png"/> </br> <label class="laj"> ajouté </label></div>'
+          var ba = '<div class="ajouterb"> <img class="ajouter"  src ="public/image/acceuil/plus.png"/> </br> <label class="laj"> ajoutÃ© </label></div>'
       
            
             
@@ -321,8 +326,7 @@ function getPagnierAchatDirect( idp , idc ) {
             
         }
 
-
-        
+       
        
 function ProduitHover(){
 
@@ -342,8 +346,7 @@ function ProduitHover(){
     
     cssDisplayAjoutOrBy(y)
     
-    cssdivPagnier()
- 
+   
     reverseCurveGlobale( curIndexTab , y )
     
     var nl =  textt($('.pdescription').eq(y) , y ) 
@@ -354,8 +357,9 @@ function ProduitHover(){
     
       curIndexTab = y
       
-      
-      
+     
+      cssdivPagnier()
+ 
     }
     
      
@@ -735,8 +739,8 @@ function ProduitHover(){
         
            function htmldivanimepagnier() {
             var p = '<div id="paginerdiv"> </div>'
-            $('body #paginerdiv').remove();
-            $('body').append(p)
+            $('html #paginerdiv').remove();
+            $('html').append(p)
            
             pagnier()
            
@@ -2157,54 +2161,51 @@ $('.moins').hover(function(){
         }
       
         function topDivPagnier() {
-          var top = 0
+          var top = 0 
+
+          var width = $('tr').height()
+        
           
-         if( curtab==1){
-          if( indextr==0)
-               top =   (X*44)/100 
+       
+     
+           if( indextr==0){
+
+            top =   $('tr').eq(0).offset().top + width
+         
+           }
+               
                else  if ( indextr== 1)
-               top =    (X*67)/100 
+               top =     $('tr').eq(1).offset().top + width
+  
                else
-               top =    (X*85)/100 
+               top =     $('tr').eq(2).offset().top  + width
+ 
              
-              
-         }
-         else if( curtab==2){
-          if( indextr==0)
-          top =   (X*44)/100 
-          else  if ( indextr== 1)
-          top =    (X*67)/100 
-          else
-          top =    (X*90)/100 
-        
-         }
-        
-         else if( curtab==3){
-          if( indextr==0)
-          top =   (X*44)/100 
-          else  if ( indextr== 1)
-          top =    (X*67)/100 
-          else
-          top =    (X*90)/100 
-        
-         }
+    
+          
             return top
            
          }
+
+
         
          function getPosition(e) {
           var left = 0
           var top = 0
         
-          
+          var data ={}
             while (e.offsetParent != undefined && e.offsetParent != null) {
                  left += e.offsetLeft +( e.clientleft!= null ? e.clientleft : 0 ) ;
                  top += e.offsetTop + ( e.clientTop != null ? e.clientTop : 0);
                  e = e.offsetParent ;
             }
-            return new Array( left , top)
+            data.top = top
+            data.left = left
+            return data ;
+           
         }
 
+       
         //anime pagnier
         function animePagnierA() {
           var X =    $('#tableproduitdiv').width() - 120
@@ -2687,5 +2688,8 @@ function annulerflouterie(){
 
 
 
-
+$('#ttt').offset({
+             
+  top : 100 
+ });
 
