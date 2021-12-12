@@ -2406,7 +2406,7 @@ $('.moins').hover(function(){
         function plus() {
       
           $('#plus').click(function(){
-            
+            alert('plus wayy')
              curTabUpdate(parti)
         
             
