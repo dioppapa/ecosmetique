@@ -152,7 +152,7 @@ function cssNomHoraire() {
           'padding':'1%',
           
           
-        
+          'border':'1px solid #00ffff',
         'background':'rgba(0,0,0,0.3)',
         
         
@@ -195,7 +195,7 @@ function cssNomHoraire() {
     'background':'rgba(0,0,0,0.3)',
     
     'overflow': 'hidden',
-    
+    'border':'1px solid #00ffff',
     
       });
       $("#divm").css({
