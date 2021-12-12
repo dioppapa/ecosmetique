@@ -2415,13 +2415,13 @@ $('.moins').hover(function(){
         
           
         createTableproduit(produit , 0, tr)
-                 alert('on est dans la premier partie '+ curtab)
+                 
            }
             else {
              
                
             createTableproduit(produit , (curtab -1 ) *tr, (tr *curtab))
-                         alert('on est dans la seconde partie '+ curtab)
+                        
         
             }
            
