@@ -76,12 +76,12 @@ cssDisplayAjoutOrBy(0)
 
  showHideLogin()
 
- animePagnierA()
+ //animePagnierA()
  cssdivPagnierInit()
  
-   var nl =  textt($('.pdescription').eq( curIndexTab) , curIndexTab) 
+   //var nl =  textt($('.pdescription').eq( curIndexTab) , curIndexTab) 
        
-  curveGlobale(nl , curIndexTab )
+ // curveGlobale(nl , curIndexTab )
 
  
   
@@ -285,9 +285,9 @@ function getPagnierAchatDirect( idp , idc ) {
     
       
 
-          var bc = '<div class="commanderb"> <img class="commander"  src ="public/image/acceuil/pp.png"/> </br> <label class="lac"> achetÃ© </label> </div>'
+          var bc = '<div class="commanderb"> <img class="commander"  src ="public/image/acceuil/pp.png"/> </br> <label class="lac"> acheté </label> </div>'
           
-          var ba = '<div class="ajouterb"> <img class="ajouter"  src ="public/image/acceuil/plus.png"/> </br> <label class="laj"> ajoutÃ© </label></div>'
+          var ba = '<div class="ajouterb"> <img class="ajouter"  src ="public/image/acceuil/plus.png"/> </br> <label class="laj"> ajouté </label></div>'
       
            
             
@@ -347,13 +347,13 @@ function ProduitHover(){
     cssDisplayAjoutOrBy(y)
     
    
-    reverseCurveGlobale( curIndexTab , y )
+   // reverseCurveGlobale( curIndexTab , y )
     
-    var nl =  textt($('.pdescription').eq(y) , y ) 
+   // var nl =  textt($('.pdescription').eq(y) , y ) 
 
    
       
-    curveGlobale(nl , y )
+   // curveGlobale(nl , y )
     
       curIndexTab = y
       
@@ -546,6 +546,7 @@ function ProduitHover(){
                   'float': 'left',
                   'font-weight': 'bold',
                    'font-size': '15px',
+                   'color': 'blue',
                     'font-family': 'Arial',
                     'font-style': 'italic',
                    });
@@ -554,7 +555,8 @@ function ProduitHover(){
                     'float': 'right',
                     'width': 'max-content',
                     'margin': '0px',
-                    'color': '#00ffff',
+                  //  'color': '#00ffff',
+                
                     'font-size': '17px',
                     'font-style': 'italic',
                     
@@ -571,6 +573,7 @@ function ProduitHover(){
                     'color': 'white',
                     'font-weight': 'bold',
                     'font-size': '10px',
+                    'display': 'none',
                     'text-align': 'center',
                      
                'font-family': 'Courier New Courier, monospace',
@@ -587,7 +590,7 @@ function ProduitHover(){
             'border': '1px solid black',
             'box-shadow': '1px 1px 5px black',
            'border-radius': '5%',
-            'background':'rgba(0,0,0,0.3)',
+           // 'background':'rgba(0,0,0,0.3)',
             '-webkit-transition': '.8s ease-in-out',
             'transition': '.8s ease-in-out ', 
             
@@ -598,12 +601,11 @@ function ProduitHover(){
           $(".tablelinepA .p").eq( y).css({
             
           
-           'border': '1px solid black',
+           'border': '1px solid blue',
            'box-shadow': '1px 1px 5px black',
            'border-radius': '5%',
-            'background':'rgba(0,0,0,0.3)',
-            'border-radius': '50%',
-         
+         //   'background':'rgba(0,0,0,0.3)',
+           
             }) ;
              
            
@@ -2390,7 +2392,7 @@ $('.moins').hover(function(){
         $('#progr')
       .css('width','0px')
       .animate({
-      width : '70px'
+      width : '60px'
       },{
       duration : 2500
       , queue : true // ici peu importe sa valeur
@@ -2436,6 +2438,7 @@ $('.moins').hover(function(){
         cssAjouterOk()
         
         cssdivPagnier()
+        cssPagnier()
         $('.pagnier').css({
           'width':'30px',
          
@@ -2504,11 +2507,15 @@ $('.moins').hover(function(){
         function cssBody() {
    
           $("body").css({
-            'background-image': 'linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("public/image/acceuil/bg.jpg")',
+            //'background-image': 'linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(public/image/acceuil/bg.jpg)',
+            'background-image': 'url(public/image/acceuil/bg.jpg)',
+         
             'background-repeat':'no-repeat',
         
             'background-position': 'center',
             'background-size': 'cover',
+          
+         // 'background-color': 'rgba(0,0,0,0.4)',
             'margin':'0px',
             'position':'relative',
             'padding':'0px'
@@ -2538,7 +2545,8 @@ return ver ;
 function cssPagnier() {
   $('#pagnierAnimation').css({
    
-   'border': '1px solid black' ,
+   'border':'1px solid #00ffff',
+  
    'width':'15%',
    'border-radius':'15%',
     
