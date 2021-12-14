@@ -25,6 +25,13 @@ function cssSenregistrement() {
       
 
 
+      
+
+       
+
+      
+
+
        $(".save").css({
         'width': '100%',
       'padding':'10px 0',
@@ -47,7 +54,19 @@ function cssSenregistrement() {
       'background': '#F3C693',
       'border': '0',
       'outline': 'none',
-      'margin':'30px',
+      'margin-top':'30px',
+      'border-radius': '30px',
+       });
+       $("#annuler").css({
+        'width': '25%',
+       'cursor': 'pointer',
+      'display': 'block',
+      
+      'background': '#bafff0',
+      
+      'outline': 'none',
+      'margin-top':'2%',
+      'margin-left':'35%',
       'border-radius': '30px',
        });
 
