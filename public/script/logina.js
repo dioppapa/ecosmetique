@@ -18,6 +18,7 @@ createReseau()
 clickReseau()
 hoverReseau()
 validerInputLogin()
+annulerEnregistrement()
 
 function validerInputLogin(){
  
@@ -508,7 +509,7 @@ var passb = '<input  class="save" type="text"  placeholder="Passe" required >'
 var passbs = '<span  class="span" type="text"> </span>'
 
 
-var fin = ' </table> <input id="saveNewClient" type="button" value="enregistrer">   </div>'
+var fin = ' </table> <input id="saveNewClient" type="button" value="devenir client"> <input id="annuler" type="button" value="annuler">   </div>'
 
 
        
@@ -599,7 +600,7 @@ var nomEtPrenom =   debut  + nom + prenom + milieu + bouton + fin
                 
      var valider = '<input id="valider" class="button" value="valider" >  </input>'
      
-     var senregistrer = '<a id="enregistrer" class="senregistrer"> s\'enregistrer </a>'
+     var senregistrer = '<a id="enregistrer" class="senregister"> devenir client </a>'
    
  var debut = '<div id="user" style="display: none;" > '
  var nom = ' <label id="nom"> nom </label> </br> ' 
@@ -830,6 +831,27 @@ var senregistrer = '<a id="enregistrer" class="senregistrer"> s\'enregistrer </a
          }) ;
       
      }
+
+     function annulerEnregistrement() {
+     
+      $('#annuler').click(function(){
+        
+        hideL()
+        annulerFlouter()
+     
+ableclick()
+    
+     
+    
+       $("#divenregistrer").css({
+        'display': 'none',
+       }) ;
+
+      });
+      
+    } 
+
+
      
      function enregistrer() {
      
