@@ -18,13 +18,12 @@
    var idpr = tableDonnep[indexpr].id
    var lp = tableDonnep.length ;
   
-      
+     
    createTableProduit()
    updateDetailp(tableDonnep[indexpr])
    cleackTableLinep() 
    validerAjouterProduit()
-  
-
+   
    function chercherp() {
 
     
@@ -552,6 +551,34 @@ function textToSpan( text , chart) {
   }
   
 
+  
+  function gestionStock() {
+  
+    $('#gestion').click(function(){
+
+      $("#tabproduit").css({
+        'display': 'none',
+        
+     }) ;
+     $("#tableapercup").css({
+      'display': 'none',
+      
+   }) ;
+     
+     $("#divgestion").css({
+      'display': 'block',
+      
+   }) ;
+
+  
+      
+     
+  
+});
+
+    
+  }
+   
   function boutonControlp() {
     $(document).off()
     $(document).keyup(function(event){
