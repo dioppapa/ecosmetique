@@ -16,7 +16,8 @@ var indexDir = 0
    clickMenu()
    clickSupprimValide()
    clickAjouterDir()
-   
+   gestionStock()
+
   
   
 
@@ -611,3 +612,6 @@ $('.inputvalidationb').eq(1).click(function(){
          
         }) ;
   }
+
+
+  
