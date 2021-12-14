@@ -550,7 +550,20 @@ function cssDivClient() {
                                 
                                 }) ;
                     
-            
+                                $("#gestion").css({
+                                    'width': '55%',
+                                    'position': 'absolute',
+                                    'top': '95%',
+                                   'cursor': 'pointer',
+                                  'display': 'block',
+                                  
+                                  'background': '#bafff0',
+                                  
+                                  'outline': 'none',
+                                  'margin-top':'2%',
+                                  'margin-left':'33%',
+                                  'border-radius': '30px',
+                                   });
                     
                 }
    function cssCommande(){
