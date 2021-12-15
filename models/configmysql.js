@@ -1,11 +1,11 @@
 var mysql = require('mysql');
 
  var connection= mysql.createConnection({
-   host:'mysql5045.site4now.net',
-   user:'a7dd44_ecommer',
+   host:'remotemysql.com',
+   user:'TAjktmiiR9',
    port:'3306',
-   password:'Salamata2004',
-   database:'db_a7dd44_ecommer'
+   password:'rzGkBAqkuR',
+   database:'TAjktmiiR9'
  });
  
 connection.connect(function(error){
