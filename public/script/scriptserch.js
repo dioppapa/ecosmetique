@@ -590,7 +590,7 @@ function ProduitHover(){
             'border': '1px solid black',
             'box-shadow': '1px 1px 5px black',
            'border-radius': '5%',
-           // 'background':'rgba(0,0,0,0.3)',
+            'background':'rgba(186,255,240,0.3)',
             '-webkit-transition': '.8s ease-in-out',
             'transition': '.8s ease-in-out ', 
             
@@ -604,7 +604,7 @@ function ProduitHover(){
            'border': '1px solid blue',
            'box-shadow': '1px 1px 5px black',
            'border-radius': '5%',
-         //   'background':'rgba(0,0,0,0.3)',
+           'background':'rgba(186,255,240,0.8)',
            
             }) ;
              
@@ -2415,14 +2415,12 @@ $('.moins').hover(function(){
         
           
         createTableproduit(produit , 0, tr)
-                 
            }
             else {
              
                
             createTableproduit(produit , (curtab -1 ) *tr, (tr *curtab))
-                        
-        
+                  
             }
            
              htmldivanimepagnier()
@@ -2441,7 +2439,6 @@ $('.moins').hover(function(){
         
         cssdivPagnier()
         cssPagnier()
-             
         $('.pagnier').css({
           'width':'30px',
          
@@ -2511,14 +2508,14 @@ $('.moins').hover(function(){
    
           $("body").css({
             //'background-image': 'linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(public/image/acceuil/bg.jpg)',
-            'background-image': 'url(public/image/acceuil/bg.jpg)',
+       //     'background-image': 'url(public/image/acceuil/bg.jpg)',
          
-            'background-repeat':'no-repeat',
+        //    'background-repeat':'no-repeat',
         
-            'background-position': 'center',
-            'background-size': 'cover',
+          //  'background-position': 'center',
+          //  'background-size': 'cover',
           
-         // 'background-color': 'rgba(0,0,0,0.4)',
+          'background-color': 'rgba(186,255,240,0.4)',
             'margin':'0px',
             'position':'relative',
             'padding':'0px'
