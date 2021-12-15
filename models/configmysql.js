@@ -1,7 +1,7 @@
 var mysql = require('mysql');
 
  var connection= mysql.createConnection({
-   host:'MYSQL5045.site4now.net',
+   host:'mysql5045.site4now.net',
    user:'a7dd44_ecommer',
    password:'Salamata2004',
    database:'db_a7dd44_ecommer'
