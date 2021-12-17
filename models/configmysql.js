@@ -1,11 +1,11 @@
 var mysql = require('mysql');
 
  var connection= mysql.createConnection({
-   host:'remotemysql.com',
-   user:'TAjktmiiR9',
+   host:'sql4.freemysqlhosting.net',
+   user:'sql4459593',
    port:'3306',
-   password:'rzGkBAqkuR',
-   database:'TAjktmiiR9'
+   password:'DglvYEBBPI',
+   database:'sql4459593'
  });
  
 connection.connect(function(error){
