@@ -45,7 +45,7 @@ function cssautocompl() {
 
         $("#entete").css({
            // 'background':'rgba(0,0,0,0.3)',
-              'background': 'url("public/image/acceuil/beauteb.png")  no-repeat top right,url("public/image/acceuil/beautea.png")  no-repeat top left , #00bfff',
+              'background': 'url("public/image/acceuil/beautebb.png")  no-repeat top right,url("public/image/acceuil/beautea.png")  no-repeat top left , #00bfff',
               
               
              }) ;
